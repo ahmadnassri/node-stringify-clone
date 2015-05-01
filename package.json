@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "name": "stringify-clone",
+  "description": "Wrapper for fast object cloning using `JSON.parse` & `JSON.stringify`",
+  "author": "Ahmad Nassri <ahmad@ahmadnassri.com> (https://www.ahmadnassri.com/)",
+  "homepage": "https://github.com/ahmadnassri/stringify-clone",
+  "repository": "ahmadnassri/stringify-clone",
+  "license": "MIT",
+  "main": "./src/index.js",
+  "keywords": [
+    "stringify-clone"
+  ],
+  "engines": {
+    "node": ">=0.10"
+  },
+  "files": [
+    "src"
+  ],
+  "bugs": {
+    "url": "https://github.com/ahmadnassri/stringify-clone/issues"
+  },
+  "scripts": {
+    "test": "standard && mocha --reporter spec",
+    "coverage": "istanbul cover --dir coverage ./node_modules/mocha/bin/_mocha",
+    "codeclimate": "codeclimate < coverage/lcov.info"
+  },
+  "devDependencies": {
+    "codeclimate-test-reporter": "0.0.4",
+    "istanbul": "^0.3.13",
+    "mocha": "^2.2.4",
+    "should": "^6.0.1",
+    "standard": "^3.7.2"
+  },
+  "dependencies": {}
+}
