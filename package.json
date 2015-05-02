@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "stringify-clone",
   "description": "Wrapper for fast object cloning using `JSON.parse` & `JSON.stringify`",
   "author": "Ahmad Nassri <ahmad@ahmadnassri.com> (https://www.ahmadnassri.com/)",
