@@ -1,13 +1,12 @@
-/* global describe, it */
-
-'use strict'
-
 var clone = require('..')
+var tap = require('tap')
 
-require('should')
+tap.test('stringify-clone', tap => {
+  tap.plan(2)
 
-describe('Stringify Clone', function () {
-  it('simple', function (done) {
+  tap.test('simple', assert => {
+    assert.plan(2)
+
     var original = {
       number: 10,
       string: 'foo',
@@ -16,13 +15,13 @@ describe('Stringify Clone', function () {
 
     var cloned = clone(original)
 
-    cloned.should.not.equal(original)
-    cloned.should.eql(original)
-
-    done()
+    assert.notEqual(cloned, original)
+    assert.same(cloned, original)
   })
 
-  it('complex', function (done) {
+  tap.test('complex', assert => {
+    assert.plan(2)
+
     var date = new Date()
 
     var original = {
@@ -55,9 +54,7 @@ describe('Stringify Clone', function () {
 
     var cloned = clone(original)
 
-    cloned.should.not.equal(original)
-    cloned.should.eql(expected)
-
-    done()
+    assert.notEqual(cloned, original)
+    assert.same(cloned, expected)
   })
 })
