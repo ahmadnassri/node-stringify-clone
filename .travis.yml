@@ -20,7 +20,7 @@ cache:
 after_success:
   - curl -Lo travis_after_all.py https://git.io/travis_after_all
   - python travis_after_all.py
-  - export $(cat .to_export_back) > /dev/null
+  - export $(cat .to_export_back) &> /dev/null
   - npm run coverage
   - npm run codeclimate
   - npm run semantic-release
