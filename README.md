@@ -1,13 +1,6 @@
 # Stringify Clone [![version][npm-version]][npm-url] [![License][npm-license]][license-url]
 
-Wrapper for fast object cloning using `JSON.parse` & `JSON.stringify`. see [Benchmarks](https://github.com/ahmadnassri/node-clone-benchmark).
-
-**Notes**:
-
-- cannot clone `RegExp` *(returns `{}`)*
-- `NaN` values will be converted to `null`
-- `Date` objects will be converted to ISO strings (equivalent of running `Date.toISOString()`)
-  - you can reconstruct the Date by calling `new Date(string)`
+> Wrapper for fast object cloning using `JSON.parse` & `JSON.stringify`. see [Benchmarks](https://github.com/ahmadnassri/node-clone-benchmark).
 
 [![Build Status][travis-image]][travis-url]
 [![Downloads][npm-downloads]][npm-url]
@@ -15,6 +8,13 @@ Wrapper for fast object cloning using `JSON.parse` & `JSON.stringify`. see [Benc
 [![Coverage Status][codeclimate-coverage]][codeclimate-url]
 [![Dependency Status][dependencyci-image]][dependencyci-url]
 [![Dependencies][david-image]][david-url]
+
+**Notes**:
+
+- cannot clone `RegExp` *(returns `{}`)*
+- `NaN` values will be converted to `null`
+- `Date` objects will be converted to ISO strings (equivalent of running `Date.toISOString()`)
+  - you can reconstruct the Date by calling `new Date(string)`
 
 ## Install
 
