@@ -41,7 +41,6 @@
     "echint": "^1.5.3",
     "semantic-release": "^6.3.2",
     "snazzy": "^5.0.0",
-    "tap": "^8.0.1",
-    "tap-mocha-reporter": "^3.0.0"
+    "tap": "^8.0.1"
   }
 }
