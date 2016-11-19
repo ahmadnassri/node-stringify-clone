@@ -19,7 +19,7 @@
 ## Install
 
 ```bash
-npm install --production --save stringify-clone
+npm install --only=production --save stringify-clone
 ```
 
 ## API
