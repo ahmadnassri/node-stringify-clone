@@ -9,37 +9,26 @@
     "url": "https://github.com/ahmadnassri/stringify-clone.git"
   },
   "license": "ISC",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "keywords": [
     "stringify-clone"
   ],
   "engines": {
-    "node": ">= 4"
+    "node": ">=4"
   },
   "files": [
-    "src"
+    "lib"
   ],
   "bugs": {
     "url": "https://github.com/ahmadnassri/stringify-clone/issues"
   },
   "scripts": {
-    "compile": "babel -q src",
-    "test": "tap test/*.js --reporter spec",
     "pretest": "snazzy && echint",
-    "coverage": "tap test/*.js --reporter silent --coverage",
-    "codeclimate": "tap --coverage-report=text-lcov | codeclimate-test-reporter",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+    "test": "tap test",
+    "coverage": "tap test --reporter silent --coverage"
   },
   "devDependencies": {
-    "codeclimate-test-reporter": "^0.4.0",
-    "cz-conventional-changelog": "^1.2.0",
     "echint": "^2.1.0",
-    "semantic-release": "^6.3.2",
     "snazzy": "^5.0.0",
     "tap": "^8.0.1"
   }

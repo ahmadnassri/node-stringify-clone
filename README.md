@@ -1,4 +1,4 @@
-# Stringify Clone [![version][npm-version]][npm-url] [![License][npm-license]][license-url]
+# Stringify Clone [![version][npm-version]][npm-url] [![License][license-image]][license-url]
 
 > Wrapper for fast object cloning using `JSON.parse` & `JSON.stringify`. see [Benchmarks](https://github.com/ahmadnassri/node-clone-benchmark).
 
@@ -27,26 +27,26 @@ npm install --only=production --save stringify-clone
 ### clone()
 
 ```js
-var clone = require('stringify-clone')
+const clone = require('stringify-clone')
 
 clone({
   foo: 'bar'
 })
 ```
 
-----
-> :copyright: [www.ahmadnassri.com](https://www.ahmadnassri.com/) &nbsp;&middot;&nbsp;
-> License: [ISC][license-url] &nbsp;&middot;&nbsp;
-> Github: [@ahmadnassri](https://github.com/ahmadnassri) &nbsp;&middot;&nbsp;
+---
+> :copyright: [ahmadnassri.com](https://www.ahmadnassri.com/)  · 
+> License: [ISC][license-url]  · 
+> Github: [@ahmadnassri](https://github.com/ahmadnassri)  · 
 > Twitter: [@ahmadnassri](https://twitter.com/ahmadnassri)
 
 [license-url]: http://choosealicense.com/licenses/isc/
+[license-image]: https://img.shields.io/github/license/ahmadnassri/stringify-clone.svg?style=flat-square
 
 [travis-url]: https://travis-ci.org/ahmadnassri/stringify-clone
 [travis-image]: https://img.shields.io/travis/ahmadnassri/stringify-clone.svg?style=flat-square
 
 [npm-url]: https://www.npmjs.com/package/stringify-clone
-[npm-license]: https://img.shields.io/npm/l/stringify-clone.svg?style=flat-square
 [npm-version]: https://img.shields.io/npm/v/stringify-clone.svg?style=flat-square
 [npm-downloads]: https://img.shields.io/npm/dm/stringify-clone.svg?style=flat-square
 
