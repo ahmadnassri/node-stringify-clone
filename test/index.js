@@ -1,5 +1,3 @@
-'use strict'
-
 const clone = require('..')
 const tap = require('tap')
 
