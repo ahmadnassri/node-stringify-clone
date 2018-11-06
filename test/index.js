@@ -4,13 +4,13 @@ const tap = require('tap')
 tap.test('simple', assert => {
   assert.plan(2)
 
-  let original = {
+  const original = {
     number: 10,
     string: 'foo',
     boolean: true
   }
 
-  let cloned = clone(original)
+  const cloned = clone(original)
 
   assert.notEqual(cloned, original)
   assert.same(cloned, original)
@@ -19,9 +19,9 @@ tap.test('simple', assert => {
 tap.test('complex', assert => {
   assert.plan(2)
 
-  let date = new Date()
+  const date = new Date()
 
-  let original = {
+  const original = {
     objects: {
       array: [ null, undefined, date, /deepcopy/ig ],
       to: null,
@@ -33,7 +33,7 @@ tap.test('complex', assert => {
     }
   }
 
-  let expected = {
+  const expected = {
     objects: {
       array: [ null, null, date.toISOString(), {} ],
       to: null,
@@ -45,7 +45,7 @@ tap.test('complex', assert => {
     }
   }
 
-  let cloned = clone(original)
+  const cloned = clone(original)
 
   assert.notEqual(cloned, original)
   assert.same(cloned, expected)
