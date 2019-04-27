@@ -33,6 +33,6 @@
     "test": "tap test --100 --coverage-report=lcov --no-browser"
   },
   "devDependencies": {
-    "tap": "^12.0.1"
+    "tap": "^13.0.0"
   }
 }
