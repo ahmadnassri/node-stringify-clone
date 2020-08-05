@@ -24,13 +24,8 @@
     "url": "https://github.com/ahmadnassri/stringify-clone/issues"
   },
   "scripts": {
-    "lint:deps": "npx updated",
-    "lint:ec": "npx editorconfig-checker .",
-    "lint:js": "npx eslint .",
-    "lint:md": "npx remark --quiet --frail .",
-    "lint": "npx run-p lint:*",
-    "open:coverage": "opener coverage/lcov-report/index.html",
-    "test": "tap test --100 --coverage-report=lcov --no-browser"
+    "test": "tap test --no-coverage",
+    "test:100": "tap test --100 --coverage-report=lcov --no-browser"
   },
   "devDependencies": {
     "tap": "^14.2.0"
