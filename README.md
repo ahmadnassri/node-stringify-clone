@@ -1,6 +1,25 @@
 # Stringify Clone
 
-[![License][license-image]][license-url] [![version][npm-image]][npm-url] [![Build Status][circle-image]][circle-url]
+[![license][license-img]][license-url]
+[![version][npm-img]][npm-url]
+[![super linter][super-linter-img]][super-linter-url]
+[![test][test-img]][test-url]
+[![release][release-img]][release-url]
+
+[license-url]: LICENSE
+[license-img]: https://badgen.net/github/license/ahmadnassri/node-stringify-clone
+
+[npm-url]: https://www.npmjs.com/package/stringify-clone
+[npm-img]: https://badgen.net/npm/v/stringify-clone
+
+[super-linter-url]: https://github.com/ahmadnassri/node-stringify-clone/actions?query=workflow%3Asuper-linter
+[super-linter-img]: https://github.com/ahmadnassri/node-stringify-clone/workflows/super-linter/badge.svg
+
+[test-url]: https://github.com/ahmadnassri/node-stringify-clone/actions?query=workflow%3Atest
+[test-img]: https://github.com/ahmadnassri/node-stringify-clone/workflows/test/badge.svg
+
+[release-url]: https://github.com/ahmadnassri/node-stringify-clone/actions?query=workflow%3Arelease
+[release-img]: https://github.com/ahmadnassri/node-stringify-clone/workflows/release/badge.svg 
 
 > Wrapper for fast object cloning using `JSON.parse` & `JSON.stringify`  
 
@@ -33,17 +52,3 @@ clone({
   foo: 'bar'
 })
 ```
-
----
-> Author: [Ahmad Nassri](https://www.ahmadnassri.com/) &bull; 
-> Github: [@ahmadnassri](https://github.com/ahmadnassri) &bull; 
-> Twitter: [@AhmadNassri](https://twitter.com/AhmadNassri)
-
-[license-url]: LICENSE
-[license-image]: https://img.shields.io/github/license/ahmadnassri/node-stringify-clone.svg?style=for-the-badge&logo=circleci
-
-[circle-url]: https://circleci.com/gh/ahmadnassri/workflows/node-stringify-clone
-[circle-image]: https://img.shields.io/circleci/project/github/ahmadnassri/node-stringify-clone/master.svg?style=for-the-badge&logo=circleci
-
-[npm-url]: https://www.npmjs.com/package/stringify-clone
-[npm-image]: https://img.shields.io/npm/v/stringify-clone.svg?style=for-the-badge&logo=npm
