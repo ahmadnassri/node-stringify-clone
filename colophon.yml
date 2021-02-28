@@ -1,0 +1,8 @@
+version: 2.0
+
+id: stringify-clone
+
+about:
+  title: Stringify Clone
+  description: Wrapper for fast object cloning using `JSON.parse` & `JSON.stringify`
+  repository: ahmadnassri/node-stringify-clone

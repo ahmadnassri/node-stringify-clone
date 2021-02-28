@@ -1,5 +1,5 @@
 {
-  "version": "2.0.1",
+  "version": "0.0.0-semantically-released",
   "name": "stringify-clone",
   "description": "Wrapper for fast object cloning using `JSON.parse` & `JSON.stringify`",
   "author": "Ahmad Nassri <ahmad@ahmadnassri.com> (https://www.ahmadnassri.com/)",
@@ -9,23 +9,24 @@
     "url": "https://github.com/ahmadnassri/stringify-clone.git"
   },
   "license": "MIT",
-  "main": "index.js",
+  "main": "lib/index.js",
   "keywords": [
     "stringify",
     "clone"
   ],
   "engines": {
-    "node": ">=6"
+    "node": ">=12"
   },
   "files": [
-    "index.js"
+    "lib"
   ],
   "bugs": {
     "url": "https://github.com/ahmadnassri/stringify-clone/issues"
   },
   "scripts": {
     "test": "tap test --no-coverage",
-    "test:100": "tap test --100 --coverage-report=lcov --no-browser"
+    "test:watch": "tap test --watch",
+    "test:ci": "tap test --100 --color --coverage-report=lcov --no-browser"
   },
   "devDependencies": {
     "tap": "^14.10.8"
