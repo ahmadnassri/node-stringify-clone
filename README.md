@@ -39,7 +39,7 @@ clone({
 })
 ```
 
-  [ONE LINE PACKAGE]: ./lib/index.js
+  [ONE LINE PACKAGE]: ./index.js
 
 ----
 > Author: [Ahmad Nassri](https://www.ahmadnassri.com/) &bull;
