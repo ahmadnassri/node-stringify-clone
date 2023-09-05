@@ -1,6 +1,6 @@
 {
-  "include": [
-    { "id": "NPM", "registry": "https://registry.npmjs.org", "name": "stringify-clone" },
-    { "id": "GITHUB", "registry": "https://npm.pkg.github.com", "name": "@ahmadnassri/stringify-clone" }
+  "registry": [
+    { "id": "NPM", "url": "https://registry.npmjs.org", "name": "stringify-clone" },
+    { "id": "GITHUB", "url": "https://npm.pkg.github.com", "name": "@ahmadnassri/stringify-clone" }
   ]
 }
